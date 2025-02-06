@@ -21,7 +21,6 @@
             padding: 20px;
         }
 
-
         header {
             display: flex;
 
@@ -30,14 +29,12 @@
             padding: 20px;
             max-width: 1000px;
             margin: auto;
-            /* Increased padding for better spacing */
         }
 
         .profile {
             display: flex;
             align-items: center;
             margin-right: 40px;
-            /* Added some space between profile and social icons */
         }
 
 
@@ -65,7 +62,6 @@
             display: flex;
             align-items: center;
             gap: 0.1px;
-            /* Increased gap for better spacing */
         }
 
         .social-icons a img {
@@ -78,8 +74,6 @@
             width: 64px;
             height: 48px;
         }
-
-        /* end */
 
         .profile img {
             width: 120px;
@@ -110,7 +104,6 @@
             display: flex;
             flex-direction: column;
             /* gap: 2px; */
-            /* Adds space between projects */
         }
 
         .project {
@@ -121,15 +114,14 @@
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
             margin-bottom: 20px;
-            /* Ensures spacing between projects */
+
         }
 
         .project h3 {
             color: #E8A9B0;
             font-size: 22px;
-            /* Adjusted for better readability */
             margin-bottom: 10px;
-            /* Space between title and description */
+
         }
 
         /* .project {
@@ -147,6 +139,43 @@
             height: 480px;
             object-fit: cover;
             border-radius: 10px;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 20px;
+            /* Increased spacing for better layout */
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Ensures images are centered */
+            align-items: flex-start;
+            /* Aligns items to the top */
+            margin-top: 20px;
+        }
+
+        .screenshot {
+            background: #1E1E1E;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 360px;
+            /* Matches the education-card width */
+            min-width: 300px;
+            /* Ensures responsiveness */
+            box-shadow: 0px 4px 10px rgba(167, 227, 226, 0.2);
+        }
+
+        .screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            /* border: 2px solid #E8A9B0; */
+        }
+
+        .screenshot p {
+            color: #CFCFCF;
+            font-size: 14px;
+            margin-top: 10px;
         }
 
         .skills span {
@@ -220,39 +249,82 @@
     <div class="container">
         <section class="portfolio">
             <h2>Game Programming</h2>
+
             <div class="projects">
+                <!-- !-- Mobile Snake Game Project -->
+                <div class="project">
+                    <a href="https://youtu.be/qWLasXzgnOI?si=Z2AqxS1xvjY3ONqw" target="_blank">
+                        <img src="shooter.png" alt="Snake">
+                    </a>
+                    <h3 style="color: #E8A9B0;">Space Shooter | Unity, C# - 11-2024 - Ongoing </h3>
+                    <p><strong>Developed a core gameplay mechanics, including player ship movement and
+                            shooting.</strong>Implemented technical planning and optimized the render pipeline.
+                    </p>
+
+                    <!-- <p>Add intuitive touch controls to enhance player experience.</p>
+                    <p>Implement simple <strong>procedural generation</strong> for dynamic gameplay.</p>
+                    <p>Deploy your finished game to a mobile platform.</p> -->
+
+                    <!-- Screenshots Section -->
+                    <div class="screenshots">
+                        <div class="screenshot">
+                            <a href="https://drive.google.com/file/d/10P7e3yx0A_uBb7S4k3EtDHtBl4VLlXEm/view?usp=sharing"
+                                target="_blank">
+                                <img src="scanline.png" alt="Gameplay Screenshot 1">
+                            </a>
+                            <p>Made a Custom Scanline Shader in Unity ShaderGraphs</p>
+                        </div>
+                        <div class="screenshot">
+                            <img src="menu.png" alt="Gameplay Screenshot 2">
+                            <p>Made a Scalable Menu System</p>
+                        </div>
+                        <!-- <div class="screenshot">
+                            <img src="snake.jpg" alt="Gameplay Screenshot 3">
+                            <p>Final score screen after a game session.</p>
+                        </div> -->
+                    </div>
+                </div>
                 <div class="project">
                     <a href="https://youtu.be/qWLasXzgnOI?si=Z2AqxS1xvjY3ONqw" target="_blank">
                         <img src="snake.jpg" alt="Snake">
                     </a>
-                    <h3 style="color: #E8A9B0;">Mobile Snake Game | Unity, C# - 04-2024 - 07-2024 </h3>
-                    <p><strong>A fully functional Mobile Game 2D</strong></p>
-                    <p>Configure an Android device for game development.</p>
-                    <p>Add intuitive touch controls to enhance player experience.</p>
-                    <p>Implement simple <strong>procedural generation</strong> for dynamic gameplay.</p>
-                    <p>Deploy your finished game to a mobile platform.</p>
+                    <h3 style="color: #E8A9B0;">Mobile Snake Game | Unity, C# - 06-2024 - 07-2024 </h3>
+                    <p>
+                        <strong>A fully functional Mobile Game 2D</strong><br>
+                        • Configure an Android device for game development.<br>
+                        • Add intuitive touch controls to enhance player experience.<br>
+                        • Implement simple <strong>procedural generation</strong> for dynamic gameplay.<br>
+                        • Deploy your finished game to a mobile platform.
+                    </p>
+
                 </div>
                 <div class="project">
                     <a href="https://youtu.be/V56BQXasTvc?si=RerXZShxi8hcrPp8" target="_blank">
                         <img src="mdw.png" alt="MDR">
                     </a>
-                    <h3 style="color: #E8A9B0;">Merlin’s Demon War | Unity, C# - 01-2024 - 03-2024 </h3>
-                    <p><strong> Combat Game 2D.</strong></p>
-                    <p>Understood the mechanics of the card combat genre.</p>
-                    <p>Gained expertise in importing and animating 2D assets.</p>
-                    <p>Implemented randomization and interaction systems for dynamic gameplay.</p>
-                    <p>Added sound effects to enhance the player experience.</p>
-                    <p>Developed a polished and fully functional card combat game.</p>
+                    <h3 style="color: #E8A9B0;">Merlin’s Demon War | Unity, C# - 01-2024 - 05-2024 </h3>
+                    <p>
+                        <strong>Card Combat Game 2D</strong><br>
+                        • Understood the mechanics of the card combat genre.<br>
+                        • Gained expertise in importing and animating 2D assets.<br>
+                        • Implemented randomization and interaction systems for dynamic gameplay.<br>
+                        • Added sound effects to enhance the player experience.<br>
+                        • Developed a polished and fully functional card combat game.
+                    </p>
+
                 </div>
                 <div class="project">
                     <a href="https://youtu.be/V56BQXasTvc?si=RerXZShxi8hcrPp8" target="_blank">
                         <img src="return.png" alt="the return">
                     </a>
-                    <h3 style="color: #E8A9B0;">The Return | Unity, C# - 12-2023 - 01-2024 </h3>
-                    <p><strong>A Text Adventure 2D Game</strong> </p>
-                    <p>Learn to build flexible and scalable game architectures.</p>
-                    <p>Gain practical experience in coding and game design.</p>
-                    <p>Complete a fully functional text-based adventure game, “The Return.”</p>
+                    <h3 style="color: #E8A9B0;">The Return | Unity, C# - 12-2023 - 03-2024 </h3>
+                    <p>
+                        <strong>A Text Adventure 2D Game</strong><br>
+                        • Learn to build flexible and scalable game architectures.<br>
+                        • Gain practical experience in coding and game design.<br>
+                        • Complete a fully functional text-based adventure game, “The Return.”
+                    </p>
+
                 </div>
             </div>
         </section>
@@ -264,6 +336,10 @@
                     <h3><strong>XAMK South-Eastern Finland University of Applied Sciences, Introduction to Video Games
                             Creation IVGC Online -Ongoing </strong></h3>
                     <p>Higher Vocational Education Diploma, Game Programming</p>
+                    <a href="https://drive.google.com/file/d/1T1tkuB1fcYLERAKXTYgRWzRRnYVQ2_aw/view?usp=sharing"
+                        target="_blank">
+                        <img src="certificate.png" alt="LinkedIn">
+                    </a>
                 </div>
                 <div class="education-card">
                     <h3><strong>Indira Gandhi National Open University (IGNOU), Masters in Computer Application 2024 -
