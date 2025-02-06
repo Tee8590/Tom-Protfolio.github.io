@@ -107,18 +107,35 @@
         }
 
         .projects {
-
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            /* gap: 2px; */
+            /* Adds space between projects */
         }
 
         .project {
+            width: 100%;
             background: #1E1E1E;
-            padding: 15px;
+
+            padding: 20px;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            /* Ensures spacing between projects */
         }
+
+        .project h3 {
+            color: #E8A9B0;
+            font-size: 22px;
+            /* Adjusted for better readability */
+            margin-bottom: 10px;
+            /* Space between title and description */
+        }
+
+        /* .project {
+            width: 100%;
+            background: #1E1E1E;
+        } */
 
         .project:hover {
             transform: scale(1.05);
@@ -127,7 +144,7 @@
 
         .projects img {
             width: 100%;
-            height: 200px;
+            height: 480px;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -183,7 +200,7 @@
             <a href="https://www.linkedin.com/in/tom-godsalo-936ba520b/" target="_blank">
                 <img src="in.png" alt="LinkedIn">
             </a>
-            <a href="https://github.com/Tee8590" target="_blank">
+            <a href="https://github.com/dashboard" target="_blank">
                 <img src="git.png" alt="GitHub">
             </a>
             <a href="https://drive.google.com/file/d/1OUfZUqaqSCHIj3rGUWGuRKeFOvMZ4-UO/view?usp=sharing" target="_blank"
@@ -210,9 +227,9 @@
                     </a>
                     <h3 style="color: #E8A9B0;">Mobile Snake Game | Unity, C# - 04-2024 - 07-2024 </h3>
                     <p><strong>A fully functional Mobile Game 2D</strong></p>
-                    <p>Configure your Android device for game development.</p>
+                    <p>Configure an Android device for game development.</p>
                     <p>Add intuitive touch controls to enhance player experience.</p>
-                    <p>Implement simple procedural generation for dynamic gameplay.</p>
+                    <p>Implement simple <strong>procedural generation</strong> for dynamic gameplay.</p>
                     <p>Deploy your finished game to a mobile platform.</p>
                 </div>
                 <div class="project">
