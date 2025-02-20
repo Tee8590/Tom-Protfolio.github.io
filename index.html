@@ -17,69 +17,85 @@
         }
 
         header {
-            text-align: center;
-            padding: 20px;
-        }
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0F0F0F;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-        header {
-            display: flex;
+@media (min-width: 768px) {
+    header {
+        flex-direction: row; /* Side-by-side layout for desktop */
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        text-align: left;
+    }
+}
 
-            background-color: #0F0F0F;
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #E8A9B0;
+    margin-bottom: 10px;
+}
 
-        .profile {
-            display: flex;
-            align-items: center;
-            margin-right: 40px;
-        }
+@media (min-width: 768px) {
+    .profile img {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+}
 
+.profile h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.profile p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Increased gap for better spacing */
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 48px;
+    height: 48px;
+}
+
+.resume-icon img {
+    width: 48px;
+    height: 36px;
+}
 
         .profile img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 3px solid #E8A9B0;
-            margin-right: 20px;
-        }
-
-        .profile h1 {
-            color: #A7E3E2;
-            font-size: 35px;
-            margin: 0;
-        }
-
-        .profile p {
-            color: #CFCFCF;
-            font-size: 16px;
-            margin: 5px 0 0;
-        }
-
-        .social-icons {
-            display: flex;
-            align-items: center;
-            gap: 0.1px;
-        }
-
-        .social-icons a img {
-            width: 64px;
-            height: 64px;
-            border: none;
-        }
-
-        .resume-icon img {
-            width: 64px;
-            height: 48px;
-        }
-
-        .profile img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #E8A9B0;
+            border: 2px solid #E8A9B0;
         }
 
         nav a {
